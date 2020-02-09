@@ -1,0 +1,7 @@
+D:\VSProjects\MMTask\MMTask\bin\Debug\MMTask.exe.config
+D:\VSProjects\MMTask\MMTask\bin\Debug\MMTask.exe
+D:\VSProjects\MMTask\MMTask\bin\Debug\MMTask.pdb
+D:\VSProjects\MMTask\MMTask\obj\Debug\MMTask.csprojAssemblyReference.cache
+D:\VSProjects\MMTask\MMTask\obj\Debug\MMTask.csproj.CoreCompileInputs.cache
+D:\VSProjects\MMTask\MMTask\obj\Debug\MMTask.exe
+D:\VSProjects\MMTask\MMTask\obj\Debug\MMTask.pdb
