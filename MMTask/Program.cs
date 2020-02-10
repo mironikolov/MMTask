@@ -15,13 +15,17 @@ namespace MMTask
             do
             {
                 Console.WriteLine( "Please enter an odd number between 3 and 9999:" );
-                num = checkInput( Console.ReadLine() );
+                num = checkInputNumber( Console.ReadLine() );
             } while ( num == 0 );
 
-            printLogo(num);
+            printLogo( num );
         }
 
-        static int checkInput( string num ) {
+        /// <summary>
+        /// Validates string input and returns int.
+        /// </summary>
+        /// <returns> Converted string to int or 0 for failed validation </returns>
+        static int checkInputNumber( string num ) {
             int n = 0;
             if ( !int.TryParse( num , out n ))
             {
@@ -35,6 +39,11 @@ namespace MMTask
             return n;
         }
 
+        /// <summary>
+        /// Prints char n times to the console.
+        /// </summary>
+        /// <param name="c"> Char to print </param>
+        /// <param name="n"> How many times to print the char </param>
         static void printSymbol( char c, int n ) {
             for ( int i = 0; i < n; i++ )
             {
@@ -42,6 +51,10 @@ namespace MMTask
             }
         }
 
+        /// <summary>
+        /// Prints uper part of MM logo
+        /// </summary>
+        /// <param name="n"> Width of the logo </param>
         static void printUpperPart( int n ) {
 
             for ( int i = 0; i < (n + 1) / 2; i++ )
@@ -64,6 +77,10 @@ namespace MMTask
             }
         }
 
+        /// <summary>
+        /// Prints lower part of MM logo
+        /// </summary>
+        /// <param name="n"> Width of the logo </param>
         static void printLowerPart( int n )
         {
             for (int i = 0; i < (n + 1) / 2; i++)
@@ -82,13 +99,17 @@ namespace MMTask
 
                     printSymbol( '*', n );
 
-                    printSymbol('-', (( n + 1 ) / 2 ) - ( 1 + i ));
+                    printSymbol( '-', (( n + 1 ) / 2 ) - ( 1 + i ));
                 }
 
                 Console.WriteLine();
             }
         }
 
+        /// <summary>
+        /// Prints MM logo
+        /// </summary>
+        /// <param name="n"> Width of the logo </param>
         static void printLogo( int n ) {
             printUpperPart( n );
             printLowerPart( n );
